@@ -1,0 +1,20 @@
+nav {
+  padding-left: 30px;
+}
+
+.list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+footer {
+  .list {
+    padding-bottom: 30px;
+    justify-content: center;
+  }
+}

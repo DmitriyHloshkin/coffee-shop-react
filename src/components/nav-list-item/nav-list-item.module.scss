@@ -1,0 +1,45 @@
+.btn {
+  height: 40px;
+  font-family: 'Merienda';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  background-color: transparent;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border:none;
+  cursor: pointer;
+
+  &:active {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transform: scale(0.9);
+    transition: all .5s;
+  }
+}
+
+.item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.item:first-child::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: url('../../images/beens/beens-white.png') center center/cover no-repeat;
+  top: 0;
+  left: -30px;
+}
+
+footer {
+  .btn {
+    color: black;
+  }
+
+  .item:first-child::after {
+    background: url('../../images/beens/beens-black-bg.png') center center/cover no-repeat;
+    left: 490px;
+  }
+}

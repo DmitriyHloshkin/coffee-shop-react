@@ -1,0 +1,29 @@
+.ourBest {
+  padding-top: 80px;
+  padding-bottom: 110px;
+  background: url('../../images/our-best/our-best-bg.jpg') center center/cover no-repeat;
+}
+
+.title {
+  width: 103px;
+  height: 26px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #000000;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.wraperCard {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listItem:not(:last-child) {
+  margin-right: 70px;
+}
