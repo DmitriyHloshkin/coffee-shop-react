@@ -1,0 +1,16 @@
+.products {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 960px;
+  margin: 0 auto;
+  min-height: 100vh;
+}

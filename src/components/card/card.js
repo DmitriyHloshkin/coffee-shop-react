@@ -1,18 +1,20 @@
 import cardStyles from './card.module.scss';
 
-const Card = ({src, title, cost, prod}) => {
-  let prodSection;
-
-  if (prod) {
-    prodSection = (
-      <div className={cardStyles.prod}>
-        {prod}
+const Card = ({src, title, price, country, onCheckCoffee, descr}) => {
+  let countrySection;
+  if (country) {
+    countrySection = (
+      <div className={cardStyles.country}>
+        {country}
       </div>
     );
   }
-
+  
   return (
-    <div className={cardStyles.card}>
+    <div className={cardStyles.card}
+          tabIndex='0'
+          onClick={ () => onCheckCoffee({src, descr, price, country}) } >
+
       <div className={cardStyles.img}>
         <img src={src} alt={title} />
       </div>
@@ -21,10 +23,10 @@ const Card = ({src, title, cost, prod}) => {
         {title}
       </div>
 
-      {prodSection}
+      {countrySection}
 
       <div className={cardStyles.cost}>
-        {`${cost}$`}
+        {`${price}$`}
       </div>
     </div>
   );
