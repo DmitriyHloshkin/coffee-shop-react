@@ -3,7 +3,9 @@ import HeaderTitle from '../header-title/header-title';
 
 import headerStyles from './header.module.scss';
 
-const Header = ({activeTab, navBtns, onChangeTab}) => {
+const Header = (props) => {
+  const {activeTab, navBtns, onChangeTab} = props;
+  
   return (
     <header className={headerStyles[activeTab]}>
       <NavList navBtns={navBtns}

@@ -13,8 +13,8 @@
 
 .descr {
   padding-top: 40px;
-  width: 589px;
-  height: 110px;
+  max-width: 589px;
+  min-height: 110px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -25,5 +25,16 @@
 
   &:nth-of-type(2){
     padding-top: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .descr  {
+    font-size: 12px;
+  }
+
+  .about {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }

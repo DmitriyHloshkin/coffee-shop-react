@@ -27,3 +27,26 @@
 .listItem:not(:last-child) {
   margin-right: 70px;
 }
+
+@media (max-width: 991px) {
+  .listItem:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wraperCard {
+    flex-direction: column;
+    align-items:center;
+    gap: 10px;
+  }
+
+  .listItem:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .ourBest {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+}

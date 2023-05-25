@@ -3,8 +3,9 @@ import BeansLogo from '../beans-logo/beans-logo';
 import aboutStyles from './about.module.scss';
 import generalStyles from '../../general-styles/container.module.scss';
 
-const About = ({about, src}) => {
-
+const About = (props) => {
+  const {about, src} = props;
+  
   return (
     <section className={aboutStyles.about}>
       <div className={generalStyles.container}>

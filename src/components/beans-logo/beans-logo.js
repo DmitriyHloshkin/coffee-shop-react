@@ -1,6 +1,8 @@
 import beansLogoStyles from './beans-logo.module.scss';
 
-const BeansLogo = ({theme}) => {
+const BeansLogo = (props) => {
+  const {theme} = props;
+  
   let imageName,
       beansClasses;
 

@@ -10,7 +10,7 @@
 }
 
 .about {
-  width: 420px;
+  max-width: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +23,7 @@
 
 .imgCard {
   margin-right: 55px;
-  width: 390px;
+  max-width: 390px;
   height: 350px;
 
   img {
@@ -60,4 +60,17 @@ span {
   font-weight: 700;
   font-size: 14px;
   color: #000000;
+}
+
+@media (max-width: 767px) {
+  .wraperCard {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgCard {
+    margin-right: 0;
+  }
+
 }

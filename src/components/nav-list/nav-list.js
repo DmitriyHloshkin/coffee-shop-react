@@ -5,7 +5,9 @@ import NavListItem from "../nav-list-item/nav-lis-item";
 import navListStyles from './nav-list.module.scss';
 import generalStyles from '../../general-styles/container.module.scss';
 
-const NavList = ({navBtns, onChangeTab, black = false, align = 'left'}) => {
+const NavList = (props) => {
+  const {navBtns, onChangeTab} = props;
+
   const listItems = navBtns.map( ({title, data}) => <NavListItem title={title}
                                                                 data={data}
                                                                 onChangeTab={onChangeTab}

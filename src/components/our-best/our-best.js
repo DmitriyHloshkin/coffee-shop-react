@@ -5,7 +5,9 @@ import Card from '../card/card';
 import ourBestStyle from './our-best.module.scss';
 import generalStyles from '../../general-styles/container.module.scss';
 
-const OurBest = ({ourBest, onCheckCoffee}) => {
+const OurBest = (props) => {
+  const {ourBest, onCheckCoffee} = props;
+  
   const cards =  ourBest.map(({title, price, order, descr}) => {
     const src = require(`../../images/our-best/our-best-${order}.jpg`);
 

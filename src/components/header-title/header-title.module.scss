@@ -1,5 +1,5 @@
 .title {
-  width: 350px;
+  max-width: 350px;
   height: 46px;
   font-style: normal;
   font-weight: 700;
@@ -7,10 +7,11 @@
   color: #FFFFFF;
   margin: 0 auto;
   margin-top: 60px;
+  text-align: center;
 }
 
 .wraper {
-  width: 530px;
+  max-width: 530px;
   margin: 0 auto;
   margin-top: 175px;
 }
@@ -40,4 +41,15 @@ h2 {
     transform: scale(0.9) translateX(-55%);
     transition: all 0.5s;
   }
+}
+
+@media (max-width: 575px) {
+  h2 {
+    font-size: 16px;
+  }
+
+  .wraper {
+    margin-top: 100px;
+  }
+
 }

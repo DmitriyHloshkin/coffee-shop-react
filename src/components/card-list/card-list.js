@@ -5,7 +5,8 @@ import Card from '../card/card';
 import cardListStyles from './card-list.module.scss';
 import generalStyles from '../../general-styles/container.module.scss';
 
-const CardList = ({products, onCheckCoffee}) => {
+const CardList = (props) => {
+  const {products, onCheckCoffee} = props;
   const src = require('../../images/coffee-cards/coffee-card-1.jpg');
 
   const productItems = products.map((product) => {

@@ -1,6 +1,8 @@
 import cardStyles from './card.module.scss';
 
-const Card = ({src, title, price, country, onCheckCoffee, descr}) => {
+const Card = (props) => {
+  const {src, title, price, country, onCheckCoffee, descr} = props;
+  
   let countrySection;
   if (country) {
     countrySection = (

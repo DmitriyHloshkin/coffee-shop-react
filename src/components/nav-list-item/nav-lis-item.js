@@ -1,6 +1,8 @@
 import navListItemStyles from './nav-list-item.module.scss';
 
-const NavListItem = ({title, data, onChangeTab}) => {
+const NavListItem = (props) => {
+  const {title, data, onChangeTab} = props;
+
   const onChange = e => {
     onChangeTab(e.target.getAttribute('data-type'));
   }

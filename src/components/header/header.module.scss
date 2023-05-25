@@ -15,3 +15,10 @@ header {
 .pleasure {
   background: url('../../images/header/pleasure-bg.png') center center/cover no-repeat;
 }
+
+
+@media (max-width: 575px) {
+  .main {
+    min-height: 440px;
+  }
+}

@@ -1,8 +1,9 @@
 import searchPanelStyles from './search-panel.module.scss';
 import generalStyles from '../../general-styles/container.module.scss';
 
-const SearchPanel = ({searchStr, onChangeSearchStr, onChangeFilter, filter}) => {
-
+const SearchPanel = (props) => {
+  const {searchStr, onChangeSearchStr, onChangeFilter, filter} = props;
+  
   const onChangeSearch = e => onChangeSearchStr(e.target.value);
   const onChangeFilterBtn = e => {
     e.preventDefault();

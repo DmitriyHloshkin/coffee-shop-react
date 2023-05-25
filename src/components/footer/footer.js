@@ -3,7 +3,9 @@ import BeansLogo from '../beans-logo/beans-logo';
 
 import footerStyle from './footer.module.scss';
 
-const Footer = ({navBtns, onChangeTab}) => {
+const Footer = (props) => {
+  const {navBtns, onChangeTab} = props;
+  
   return (
     <footer className={footerStyle.footer}>
       <NavList onChangeTab={onChangeTab}

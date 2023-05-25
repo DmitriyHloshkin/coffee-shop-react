@@ -3,7 +3,9 @@ import BeansLogo from '../beans-logo/beans-logo';
 import openCardStyles from './open-card.module.scss';
 import generalStyles from '../../general-styles/container.module.scss';
 
-const OpenCard = ({coffeeIsChecked}) => {
+const OpenCard = (props) => {
+  const {coffeeIsChecked} = props;
+
   const {src, country, descr, price} = coffeeIsChecked;
   
   return (

@@ -3,7 +3,8 @@ import BeansLogo from '../beans-logo/beans-logo';
 import styles from './header-title.module.scss';
 import generalStyles from '../../general-styles/container.module.scss';
 
-const HeaderTitle = ({activeTab}) => {
+const HeaderTitle = (props) => {
+  const {activeTab} = props;
   let title = '',
       content;
 

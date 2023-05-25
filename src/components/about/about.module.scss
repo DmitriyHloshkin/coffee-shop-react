@@ -1,6 +1,7 @@
 .about {
   padding-top: 70px;
   padding-bottom: 10px;
+  padding-left: 0;
 }
 
 .wraper {
@@ -33,7 +34,7 @@
 }
 
 .descr {
-  width: 350px;
+  max-width: 350px;
   margin-top: 15px;
   text-align: center;
 }
@@ -51,4 +52,17 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .wraper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgAbout {
+    margin-right: 0;
+    align-self: center;
+  }
 }
